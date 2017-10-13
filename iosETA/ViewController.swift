@@ -11,7 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var _join_button: UIButton!
+    @IBOutlet weak var signout: UIButton!
     
+    @IBAction func clickSignout(_ sender: Any) {
+        self.performSegue(withIdentifier: "logoutSegue", sender: self)
+    }
     var uniqueCode = ""
     
     override func viewDidLoad() {

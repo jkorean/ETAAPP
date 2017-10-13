@@ -1,0 +1,6 @@
+framework module Pods_iosETAUITests {
+  umbrella header "Pods-iosETAUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
