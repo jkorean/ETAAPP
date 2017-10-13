@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var _join_button: UIButton!
     @IBOutlet weak var signout: UIButton!
+    @IBOutlet weak var _create_button: UIButton!
     
     @IBAction func clickSignout(_ sender: Any) {
         self.performSegue(withIdentifier: "logoutSegue", sender: self)
@@ -59,5 +60,8 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func OpenCreateView(_ sender: UIButton) {
+        performSegue(withIdentifier: "CreateView", sender: self)
+    }
 }
 
